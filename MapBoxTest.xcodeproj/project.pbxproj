@@ -11,6 +11,7 @@
 		CC5B844D2111A9E8002438E2 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B844C2111A9E8002438E2 /* UIColor-Extension.swift */; };
 		CC5B844F2111B3BE002438E2 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B844E2111B3BE002438E2 /* Route.swift */; };
 		CC5B84522111C0B1002438E2 /* DirectionsExample.json in Resources */ = {isa = PBXBuildFile; fileRef = CC5B84512111C0B1002438E2 /* DirectionsExample.json */; };
+		CC5B84562111C311002438E2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B84552111C311002438E2 /* Utilities.swift */; };
 		CCA85F86210F3D0F00EC92D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA85F85210F3D0F00EC92D2 /* AppDelegate.swift */; };
 		CCA85F88210F3D0F00EC92D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA85F87210F3D0F00EC92D2 /* ViewController.swift */; };
 		CCA85F8B210F3D0F00EC92D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA85F89210F3D0F00EC92D2 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		CC5B844E2111B3BE002438E2 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		CC5B84502111C034002438E2 /* DirectionsExample.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = DirectionsExample.geojson; sourceTree = "<group>"; };
 		CC5B84512111C0B1002438E2 /* DirectionsExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DirectionsExample.json; sourceTree = "<group>"; };
+		CC5B84552111C311002438E2 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		CCA85F82210F3D0F00EC92D2 /* MapBoxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapBoxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA85F85210F3D0F00EC92D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCA85F87210F3D0F00EC92D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				CCA85F87210F3D0F00EC92D2 /* ViewController.swift */,
 				CC5B844C2111A9E8002438E2 /* UIColor-Extension.swift */,
 				CC5B844E2111B3BE002438E2 /* Route.swift */,
+				CC5B84552111C311002438E2 /* Utilities.swift */,
 				CC5B84542111C0DA002438E2 /* Views */,
 				CC5B84532111C0BD002438E2 /* Resources */,
 			);
@@ -249,6 +252,7 @@
 				CCA85F88210F3D0F00EC92D2 /* ViewController.swift in Sources */,
 				CC5B844F2111B3BE002438E2 /* Route.swift in Sources */,
 				CC5B844D2111A9E8002438E2 /* UIColor-Extension.swift in Sources */,
+				CC5B84562111C311002438E2 /* Utilities.swift in Sources */,
 				CCA85F86210F3D0F00EC92D2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -34,7 +34,7 @@ class ViewController: UIViewController, MGLMapViewDelegate {
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(didLongPress(_:)))
         mapView.addGestureRecognizer(longPress)
         
-        let newRoute: Route = Route(json: <#T##[String : Any]#>, waypoints: <#T##[Waypoint]#>, options: <#T##RouteOptions#>)
+        //let newRoute: Route = Route(json: <#T##[String : Any]#>, waypoints: <#T##[Waypoint]#>, options: <#T##RouteOptions#>)
     }
     
     @objc func didLongPress(_ sender: UILongPressGestureRecognizer) {

@@ -8,18 +8,18 @@
 
 import Foundation
 
-typealias directionsResponse = [Directions]
+typealias directionsResponse = PlanDirections
 
-struct Directions: Codable {
-    let routes: [Route]
-    let waypoints: [Waypoint]
+struct PlanDirections: Codable {
+    let routes: [PlanRoute]
+    let waypoints: [PlanWaypoint]
     let code: String
     let uuid: String
 }
 
-struct Route: Codable {
+struct PlanRoute: Codable {
     let geometry: String
-    let legs: [Leg]
+    let legs: [PlanLeg]
     let weightName: String
     let weight: Float
     let duration: Float
@@ -35,7 +35,7 @@ struct Route: Codable {
     }
 }
 
-struct Leg: Codable {
+struct PlanLeg: Codable {
     let summary: String
     let weight: Float
     let duration: Float
@@ -43,7 +43,8 @@ struct Leg: Codable {
     let distance: Float
 }
 
-struct Waypoint: Codable {
+struct PlanWaypoint: Codable {
     let name: String
     let location: [Float]
 }
+
