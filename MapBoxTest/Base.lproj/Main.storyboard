@@ -18,25 +18,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="00V-Uh-4P5" customClass="MGLMapView">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a6c-Jn-Xyj" customClass="MBNavigationMapView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/mapbox/streets-v10"/>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="00V-Uh-4P5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7Ix-8a-VE6"/>
-                            <constraint firstItem="00V-Uh-4P5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LDg-Gv-Ahg"/>
-                            <constraint firstItem="00V-Uh-4P5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="W6C-j5-wY7"/>
-                            <constraint firstItem="00V-Uh-4P5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="s7Z-c9-f9k"/>
+                            <constraint firstItem="a6c-Jn-Xyj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gh0-n6-3de"/>
+                            <constraint firstItem="a6c-Jn-Xyj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HLf-we-CaF"/>
+                            <constraint firstItem="a6c-Jn-Xyj" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HcZ-z4-6tl"/>
+                            <constraint firstItem="a6c-Jn-Xyj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hF0-L9-GVF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="mapView" destination="00V-Uh-4P5" id="XLE-6c-gQO"/>
+                        <outlet property="mapView" destination="a6c-Jn-Xyj" id="ZB4-Rx-oli"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
