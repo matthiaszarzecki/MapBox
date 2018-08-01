@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C08439CC83CBE601E06F449B /* Pods_MapBoxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E53B0B50760117D5E2C580 /* Pods_MapBoxTest.framework */; };
+		CC5B844D2111A9E8002438E2 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B844C2111A9E8002438E2 /* UIColor-Extension.swift */; };
+		CC5B844F2111B3BE002438E2 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B844E2111B3BE002438E2 /* Route.swift */; };
+		CC5B84522111C0B1002438E2 /* DirectionsExample.json in Resources */ = {isa = PBXBuildFile; fileRef = CC5B84512111C0B1002438E2 /* DirectionsExample.json */; };
 		CCA85F86210F3D0F00EC92D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA85F85210F3D0F00EC92D2 /* AppDelegate.swift */; };
 		CCA85F88210F3D0F00EC92D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA85F87210F3D0F00EC92D2 /* ViewController.swift */; };
 		CCA85F8B210F3D0F00EC92D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA85F89210F3D0F00EC92D2 /* Main.storyboard */; };
@@ -19,6 +22,10 @@
 		00E0C56AEDE3B78D51317FAB /* Pods-MapBoxTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapBoxTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapBoxTest/Pods-MapBoxTest.debug.xcconfig"; sourceTree = "<group>"; };
 		05ABECC60D13E51BDB69D8A6 /* Pods-MapBoxTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapBoxTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapBoxTest/Pods-MapBoxTest.release.xcconfig"; sourceTree = "<group>"; };
 		24E53B0B50760117D5E2C580 /* Pods_MapBoxTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapBoxTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC5B844C2111A9E8002438E2 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		CC5B844E2111B3BE002438E2 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		CC5B84502111C034002438E2 /* DirectionsExample.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = DirectionsExample.geojson; sourceTree = "<group>"; };
+		CC5B84512111C0B1002438E2 /* DirectionsExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DirectionsExample.json; sourceTree = "<group>"; };
 		CCA85F82210F3D0F00EC92D2 /* MapBoxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapBoxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA85F85210F3D0F00EC92D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCA85F87210F3D0F00EC92D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +56,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CC5B84532111C0BD002438E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCA85F8C210F3D1000EC92D2 /* Assets.xcassets */,
+				CCA85F91210F3D1000EC92D2 /* Info.plist */,
+				CC5B84512111C0B1002438E2 /* DirectionsExample.json */,
+				CC5B84502111C034002438E2 /* DirectionsExample.geojson */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CC5B84542111C0DA002438E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CCA85F89210F3D0F00EC92D2 /* Main.storyboard */,
+				CCA85F8E210F3D1000EC92D2 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CCA85F79210F3D0F00EC92D2 = {
 			isa = PBXGroup;
 			children = (
@@ -72,10 +99,10 @@
 			children = (
 				CCA85F85210F3D0F00EC92D2 /* AppDelegate.swift */,
 				CCA85F87210F3D0F00EC92D2 /* ViewController.swift */,
-				CCA85F89210F3D0F00EC92D2 /* Main.storyboard */,
-				CCA85F8C210F3D1000EC92D2 /* Assets.xcassets */,
-				CCA85F8E210F3D1000EC92D2 /* LaunchScreen.storyboard */,
-				CCA85F91210F3D1000EC92D2 /* Info.plist */,
+				CC5B844C2111A9E8002438E2 /* UIColor-Extension.swift */,
+				CC5B844E2111B3BE002438E2 /* Route.swift */,
+				CC5B84542111C0DA002438E2 /* Views */,
+				CC5B84532111C0BD002438E2 /* Resources */,
 			);
 			path = MapBoxTest;
 			sourceTree = "<group>";
@@ -150,6 +177,7 @@
 			files = (
 				CCA85F90210F3D1000EC92D2 /* LaunchScreen.storyboard in Resources */,
 				CCA85F8D210F3D1000EC92D2 /* Assets.xcassets in Resources */,
+				CC5B84522111C0B1002438E2 /* DirectionsExample.json in Resources */,
 				CCA85F8B210F3D0F00EC92D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +247,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCA85F88210F3D0F00EC92D2 /* ViewController.swift in Sources */,
+				CC5B844F2111B3BE002438E2 /* Route.swift in Sources */,
+				CC5B844D2111A9E8002438E2 /* UIColor-Extension.swift in Sources */,
 				CCA85F86210F3D0F00EC92D2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QDUTEX33CU;
-				INFOPLIST_FILE = "$(SRCROOT)/MapBoxTest/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MapBoxTest/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,7 +415,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QDUTEX33CU;
-				INFOPLIST_FILE = "$(SRCROOT)/MapBoxTest/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MapBoxTest/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

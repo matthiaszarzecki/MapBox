@@ -1,0 +1,38 @@
+{
+  "routes": [
+    {
+      "geometry": "_urwFt}qbMuLp_@jWzPoHhRMK",
+      "legs": [
+        {
+          "summary": "",
+          "weight": 799.5,
+          "duration": 597.7,
+          "steps": [],
+          "distance": 1317.9
+        }
+      ],
+      "weight_name": "routability",
+      "weight": 799.5,
+      "duration": 597.7,
+      "distance": 1317.9
+    }
+  ],
+  "waypoints": [
+    {
+      "name": "East 13th Street",
+      "location": [
+        -73.98891,
+        40.733122
+      ]
+    },
+    {
+      "name": "6th Avenue",
+      "location": [
+        -74.00001,
+        40.733004
+      ]
+    }
+  ],
+  "code": "Ok",
+  "uuid": "cjkawlmne00mk3jqj205rbmhz"
+}

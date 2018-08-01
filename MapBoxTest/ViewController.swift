@@ -20,6 +20,9 @@ class ViewController: UIViewController, MGLMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Set Style
+        mapView.styleURL = MGLStyle.lightStyleURL
+        
         // Set the map view's delegate
         mapView.delegate = self
         
@@ -30,6 +33,8 @@ class ViewController: UIViewController, MGLMapViewDelegate {
         // Add a gesture recognizer to the map view
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(didLongPress(_:)))
         mapView.addGestureRecognizer(longPress)
+        
+        let newRoute: Route = Route(json: <#T##[String : Any]#>, waypoints: <#T##[Waypoint]#>, options: <#T##RouteOptions#>)
     }
     
     @objc func didLongPress(_ sender: UILongPressGestureRecognizer) {
@@ -92,13 +97,25 @@ class ViewController: UIViewController, MGLMapViewDelegate {
             
             // Customize the route line color and width
             let lineStyle = MGLLineStyleLayer(identifier: "route-style", source: source)
-            lineStyle.lineColor = NSExpression(forConstantValue: #colorLiteral(red: 0.1897518039, green: 0.3010634184, blue: 0.7994888425, alpha: 1))
+            let weColor = UIColor.colorFromHexString("00a9ea")
+            lineStyle.lineColor = NSExpression(forConstantValue: weColor)
             lineStyle.lineWidth = NSExpression(forConstantValue: 3)
             
             // Add the source and style layer of the route line to the map
             mapView.style?.addSource(source)
             mapView.style?.addLayer(lineStyle)
         }
+    }
+    
+    // Implement the delegate method that allows annotations to show callouts when tapped
+    func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
+        return true
+    }
+    
+    // Present the navigation view controller when the callout is selected
+    func mapView(_ mapView: MGLMapView, tapOnCalloutFor annotation: MGLAnnotation) {
+        let navigationViewController = NavigationViewController(for: directionsRoute!)
+        self.present(navigationViewController, animated: true, completion: nil)
     }
     
 }
